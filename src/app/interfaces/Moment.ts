@@ -1,4 +1,4 @@
-export interface Momment {
+export interface Moment {
   id?: number;
   title: string;
   description: string;

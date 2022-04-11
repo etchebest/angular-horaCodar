@@ -3,12 +3,12 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AboutComponent } from './components/pages/about/about.component';
 import { HomeComponent } from './components/pages/home/home.component';
-import { NewmommentComponent } from './components/pages/new-momment/new-momment.component';
+import { NewMomentComponent } from './components/pages/new-moment/new-moment.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
-  { path: 'momments/new', component: NewmommentComponent },
+  { path: 'moments/new', component: NewMomentComponent },
 ];
 
 @NgModule({

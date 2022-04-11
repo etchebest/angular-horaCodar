@@ -10,8 +10,10 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AboutComponent } from './components/pages/about/about.component';
 import { HomeComponent } from './components/pages/home/home.component';
-import { NewmommentComponent } from './components/pages/new-momment/new-momment.component';
-import { mommentFormComponent } from './components/momment-form/moment-form.component';
+import { NewMomentComponent } from './components/pages/new-moment/new-moment.component';
+import { MomentFormComponent } from './components/moment-form/moment-form.component';
+import { MessagesComponent } from './components/messages/messages.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -20,8 +22,9 @@ import { mommentFormComponent } from './components/momment-form/moment-form.comp
     FooterComponent,
     AboutComponent,
     HomeComponent,
-    NewmommentComponent,
-    mommentFormComponent,
+    NewMomentComponent,
+    MomentFormComponent,
+    MessagesComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,6 +32,7 @@ import { mommentFormComponent } from './components/momment-form/moment-form.comp
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

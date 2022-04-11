@@ -1,4 +1,4 @@
-<form (ngSubmit)="submit()" [formGroup]="mommentForm" #formDir="ngForm">
+<form (ngSubmit)="submit()" [formGroup]="MomentForm" #formDir="ngForm">
   <div class="form-group">
     <label for="title">Título:</label>
     <input
@@ -15,7 +15,7 @@
     <label for="description">Descrição:</label>
     <textarea
       required
-      placeholder="Conte sobre seu mommento!"
+      placeholder="Conte sobre seu Momento!"
       formControlName="description"
     ></textarea>
     <div *ngIf="description.invalid && formDir.submitted" class="validation-error">
@@ -23,8 +23,8 @@
     </div>
   </div>
   <div class="form-group">
-    <label for="image">Coloque a foto que mais marcou esse mommento:</label>
-    <input type="file" />
+    <label for="image">Coloque a foto que mais marcou esse Momento:</label>
+    <input type="file" (change)="onFileSelected($event)"/>
   </div>
   <input class="btn-submit" type="submit" value="{{ btnText }}" />
 </form>
